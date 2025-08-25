@@ -14,7 +14,7 @@
 ---
 설치 방법
 ```bash
-git clone <repo-url>
+git clone https://github.com/QUEZ-science/Quez-FE
 cd Quez-FE
 npm install
 npm run dev
