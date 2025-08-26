@@ -46,7 +46,6 @@ p{
 }
 
 #main {
-    margin-top: 74px;
     display: flex;
     flex-direction: column;
     justify-content: center;
