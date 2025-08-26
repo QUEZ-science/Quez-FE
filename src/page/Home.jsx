@@ -1,10 +1,12 @@
-import { Routes, Router } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
 import Header from '../components/Header';
+
 
 export default function Home(){
     return (
         <>
             <Header />
+            <Outlet />
         </>
     )
 }

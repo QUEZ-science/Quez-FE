@@ -1,0 +1,61 @@
+@import url("pretendard/dist/web/static/pretendard.css");
+h1 {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: -0.01em;
+}
+h2 {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: normal;
+}
+h3, .h3{
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: normal;
+}
+h4, .h4{
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: normal;
+}
+
+p{
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.p2{
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: normal;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    height: 100vh;
+    background-color: #EDF0F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

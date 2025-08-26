@@ -8,8 +8,8 @@ export default function Header() {
                 <Link to="/"></Link>
                 <img src={Logo} alt="" />
                 <div className='login_area'>
-                    <Link to="/">LogIn</Link>
-                    <Link to="/">SignUp</Link>
+                    <Link to="/" className='h3'>LogIn</Link>
+                    <Link to="/" className='h3 blue'>SignUp</Link>
                 </div>
             </div>
         </>
