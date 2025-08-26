@@ -12,7 +12,7 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}>
+        <Route path="/" element={<Home isLogin={isLogin} setIsLogin={setIsLogin} />}>
           <Route index element={isLogin? <Navigate to="LogInMain" replace /> : <Main /> } />
           <Route path="LogInMain" element={<LogInMain />} />
         </Route>
