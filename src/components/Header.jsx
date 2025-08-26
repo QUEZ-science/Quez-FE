@@ -5,11 +5,11 @@ export default function Header({isLogin, setIsLogin}) {
     return (
         <>
             <div id='Header'>
-                <Link to="/"></Link>
-                <img src={Logo} alt="logo image" />
+                <Link to="/"><img src={Logo} alt="logo image" /></Link>
+                
                 <div className='login_area'>
-                    <Link to="/" className='h3'>LogIn</Link>
-                    <Link to="/" className='h3 blue'>SignUp</Link>
+                    <Link to="/Log-in" className='h3'>LogIn</Link>
+                    <Link to="/Sign-up" className='h3 blue'>SignUp</Link>
                 </div>
             </div>
         </>
