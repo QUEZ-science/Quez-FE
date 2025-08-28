@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import { user } from '../mock/user';
 import '../style/Login.css';
 
 export default function LogIn(){
@@ -8,6 +9,26 @@ export default function LogIn(){
         id:"",
         pw:""
     });
+    const inputRef = useRef([]);
+
+    const change = e => {
+        const {name, value} = e.target;
+        setLoginData(data => ({
+            ...data,
+            [name]:value
+        }));
+    }
+    const login = ()=>{
+        if(loginData.id===""){
+            alert('아이디를 입력하지 않았습니다!');
+            return inputRef.current[0].focus();
+        } 
+        if(loginData.pw==="") {
+            alert('비밀번호를 입력하지 않았습니다!');
+            return inputRef.current[1].focus();
+        }
+    }
+
     return(
         <>
             <Header />
@@ -16,16 +37,18 @@ export default function LogIn(){
                 <div className="input-area">
                     <div className="id">
                         <p className="p2">아이디</p>
-                        <input className="id-input p" type="text" placeholder="아이디를 입력해주세요." />
+                        <input className="id-input p" type="text" placeholder="아이디를 입력해주세요."
+                        name='id' value={loginData.id} ref={el => inputRef.current[0]=el} onChange={change} />
                     </div>
                     <div className="pw">
                         <p className="p2">비밀번호</p>
-                        <input className="password-input p" type="password" placeholder="비밀번호를 입력해주세요." />
+                        <input className="password-input p" type="password" placeholder="비밀번호를 입력해주세요." 
+                        name='pw' value={loginData.pw} ref={el=>inputRef.current[1]=el} onChange={change} />
                     </div>
                     
                 </div>
                 <div className="btn-area">
-                    <button className="h2 loginBtn">로그인 하기</button>
+                    <button className="h2 loginBtn" onClick={login}>로그인 하기</button>
                     <p>회원 가입을 안 하셨나요? <Link>회원 가입 하러가기</Link></p>
                 </div>
             </div>
