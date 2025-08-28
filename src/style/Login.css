@@ -28,6 +28,7 @@
 .login-area .input-area input{
     width: 100%;
     padding: 20px;
+    padding-right: 50px;
     box-sizing: border-box;
     border-radius: 10px;
     border: solid 2px #A0ABC0;
@@ -51,4 +52,15 @@
 }
 .login-area .btn-area a {
     color: #074EE8;
+}
+.pw {
+    position: relative;
+}
+.pwBtn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 48%;
+    right: 20px;
+    cursor: pointer;
 }
