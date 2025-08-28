@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home isLogin={isLogin} setIsLogin={setIsLogin} />}>
           <Route index element={isLogin? <Navigate to="LogInMain" replace /> : <Main /> } />
-          <Route path="LogInMain" element={<LogInMain />} />
+          <Route path="QUEZ-Main" element={<LogInMain />} />
         </Route>
         <Route path="/Log-in" element={<LogIn />} />
         <Route path="/Sign-up" element={<SignUp />} />

@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState, useRef } from 'react';
 import { user } from '../mock/user';
 import '../style/Login.css';
@@ -13,6 +13,8 @@ export default function LogIn(){
     });
     const [veiwPw, setVeiwPw] = useState(false);
     const inputRef = useRef([]);
+
+    const navigate = useNavigate();
 
     const change = e => {
         const {name, value} = e.target;
@@ -33,6 +35,20 @@ export default function LogIn(){
             alert('비밀번호를 입력하지 않았습니다!');
             return inputRef.current[1].focus();
         }
+
+        let login = false;
+        user.some(data => {
+            if(data.id==loginData.id&&data.password==loginData.pw){
+                alert('로그인 성공');
+                navigate('/QUEZ-Main');
+                login = true;
+                return;
+            }
+        });
+        if(!login){
+            alert('아이디 혹은 비밀번호가 알맞지 않습니다');
+        }
+        
     }
 
     return(
