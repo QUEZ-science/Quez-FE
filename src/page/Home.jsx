@@ -1,0 +1,12 @@
+import { Routes, Route, Outlet } from 'react-router-dom';
+import Header from '../components/Header';
+
+
+export default function Home({isLogin, setIsLogin}){
+    return (
+        <>
+            <Header isLogin={isLogin} setIsLogin={setIsLogin} />
+            <Outlet />
+        </>
+    )
+}

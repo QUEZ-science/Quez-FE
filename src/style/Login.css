@@ -1,0 +1,66 @@
+.login-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+    padding: 48px 60px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.20);
+}
+.login-area .input-area {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.login-area .p2 {
+    margin: 0;
+}
+.login-area .id,
+.login-area .pw {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.login-area .input-area input{
+    width: 100%;
+    padding: 20px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: solid 2px #A0ABC0;
+}
+.login-area .loginBtn{
+    width: 488px;
+    border: none;
+    background-color: #074EE8;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.login-area .loginBtn:hover{
+    filter: brightness(90%);
+}
+.login-area .btn-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #708090;
+}
+.login-area .btn-area a {
+    color: #074EE8;
+}
+.pw {
+    position: relative;
+}
+.pwBtn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 48%;
+    right: 20px;
+    cursor: pointer;
+}
