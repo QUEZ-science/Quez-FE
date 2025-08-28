@@ -6,7 +6,6 @@ import LogInMain from './components/LogInMain';
 import LogIn from './page/LogIn';
 import SignUp from './page/SignUp';
 import './style/index.css';
-import './style/App.css';
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
