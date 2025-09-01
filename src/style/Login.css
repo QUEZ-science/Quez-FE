@@ -64,3 +64,19 @@
     right: 20px;
     cursor: pointer;
 }
+
+.school-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.school-info select {
+    width: 144px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: solid 2px #A0ABC0;
+}
+.school-info input{
+    width: 144px;
+}

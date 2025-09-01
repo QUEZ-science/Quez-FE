@@ -17,7 +17,7 @@ function App() {
           <Route index element={isLogin? <Navigate to="LogInMain" replace /> : <Main /> } />
           <Route path="QUEZ-Main" element={<LogInMain />} />
         </Route>
-        <Route path="/Log-in" element={<LogIn />} />
+        <Route path="/Log-in" element={<LogIn isLogin={isLogin} setIsLogin={setIsLogin} />} />
         <Route path="/Sign-up" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
