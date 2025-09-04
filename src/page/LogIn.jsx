@@ -43,7 +43,8 @@ export default function LogIn({isLogin, setIsLogin}){
             if(data.id==loginData.id&&data.password==loginData.pw){
                 alert('로그인 성공');
                 navigate('/QUEZ-Main');
-                setIsLogin(true);
+                setIsLogin(isLogin=true);
+                console.log(isLogin);
                 return;
             }
         });
